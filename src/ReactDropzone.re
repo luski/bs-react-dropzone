@@ -59,7 +59,7 @@ module GetInputProps = {
       onChange: onChange,
       onClick: onClick,
       tabIndex: int,
-      style: ReactDOMRe.style,
+      style: ReactDOM.style,
       ref: ref,
     };
 
@@ -70,7 +70,7 @@ module GetInputProps = {
       onChange: onChange,
       onClick: onClick,
       tabIndex: int,
-      style: ReactDOMRe.style,
+      style: ReactDOM.style,
       ref: ref,
     };
 
@@ -269,9 +269,9 @@ module Children = {
     };
   };
 
-  type t = Input.t => ReasonReact.reactElement;
+  type t = Input.t => React.element;
 
-  type js = Input.js => ReasonReact.reactElement;
+  type js = Input.js => React.element;
 
   let make = (||>) (Input.make);
 }
